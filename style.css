@@ -3,27 +3,122 @@ html {
 }
 body {
   background-color: rgb(31, 125, 212);
+  margin: 0%;
 }
 #navbar {
   position: fixed;
+  font-size: 26px;
   background-color: white;
   display: flex;
   justify-content: center;
+  min-width: 100vw;
+  padding: 1rem;
 }
 .nav-link {
-  margin-right: 2rem;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  text-decoration: none;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a {
   text-decoration: none;
 }
 #welcome-section {
   height: 100vh;
-  /* padding-top: 20vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 32px;
 }
+h2 {
+  text-align: center;
+  font-size: 32px;
+}
 .project-image {
-  max-width: 30%;
-  /* max-height: 40%; */
+  max-width: 80%;
+  min-width: 30%;
+  border-radius: 8px;
+  /* border: 1px solid black; */
+  /* padding: 20px; */
+}
+.project-tile a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-flex-top {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.project-flex-bottom {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.project-tile {
+  padding: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .project-flex-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-flex-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+}
+address {
+  font-style: normal;
+}
+#contact {
+  margin: 30%;
+}
+.contact-img {
+  max-width: 30px;
+  padding: 10px;
+  align-items: center;
+}
+#profile-link {
+  display: flex;
+  align-items: center;
+}
+#email {
+  display: flex;
+  align-items: center;
+}
+#phone {
+  display: flex;
+  align-items: center;
+}
+#links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid white;
+  padding: 2rem;
+  margin: 20%;
+  background-color: white;
+  border-radius: 8px;
 }
