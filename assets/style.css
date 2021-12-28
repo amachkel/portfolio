@@ -3,7 +3,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: rgb(31, 125, 212);
+  background-color: #324376;
   margin: 0%;
 }
 #navbar {
@@ -19,7 +19,7 @@ body {
   margin-right: 5vw;
   margin-left: 5vw;
   text-decoration: none;
-  border: 5px inset blueviolet;
+  border: 5px inset #456990;
   padding: 0.5rem 1rem;
   background: aquamarine;
 }
@@ -45,7 +45,7 @@ a {
   position: absolute;
   right: 5rem;
   max-width: 30vw;
-  border: 5px inset blueviolet;
+  border: 5px inset #06d8fc;
   z-index: -1;
 }
 h2 {
@@ -53,8 +53,10 @@ h2 {
   font-size: 32px;
 }
 #projects {
-  background-color: rgb(204, 204, 204);
+  background-color: #06d8fc;
   padding: 20px;
+  background-image: linear-gradient(#06D8FC, #83FDE0);
+  border: 5px inset #06d8fc;
 }
 .project-image {
   max-width: 100%;
@@ -129,9 +131,8 @@ address {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  border: 1px solid white;
+  border: 5px inset #2797ED;
   padding: 2rem;
   margin: 10% 30%;
-  background-color: white;
-  border-radius: 8px;
+  background-color: #88FDDF;
 }
