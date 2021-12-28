@@ -9,7 +9,7 @@ body {
 #navbar {
   position: fixed;
   font-size: 26px;
-  background-color: white;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   min-width: 100vw;
@@ -19,6 +19,9 @@ body {
   margin-right: 5vw;
   margin-left: 5vw;
   text-decoration: none;
+  border: 5px inset blueviolet;
+  padding: 0.5rem 1rem;
+  background: aquamarine;
 }
 a:link {
   color: black;
@@ -33,9 +36,17 @@ a {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   font-size: 32px;
+  padding: 1rem 5rem;
+}
+.avatar {
+  position: absolute;
+  right: 5rem;
+  max-width: 30vw;
+  border: 5px inset blueviolet;
+  z-index: -1;
 }
 h2 {
   text-align: center;
