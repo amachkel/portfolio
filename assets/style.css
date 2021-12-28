@@ -11,13 +11,12 @@ body {
   font-size: 26px;
   background-color: transparent;
   display: flex;
-  justify-content: center;
-  min-width: 100vw;
+  justify-content: flex-start;
+  min-width: 100rem;
   padding: 1rem;
 }
 .nav-link {
-  margin-right: 5vw;
-  margin-left: 5vw;
+  margin-left: 3rem;
   text-decoration: none;
   border: 5px inset #456990;
   padding: 0.5rem 1rem;
