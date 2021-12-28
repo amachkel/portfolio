@@ -61,6 +61,7 @@ h2 {
   max-width: 100%;
   min-width: 30%;
   border-radius: 8px;
+  box-shadow: 10px 10px 10px #456990;
 }
 .project-tile a {
   display: flex;
