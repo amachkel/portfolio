@@ -78,23 +78,23 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
-.project-flex-top {
+.project-flex-top, .project-flex-middle, .project-flex-bottom {
   display: flex;
 
   justify-content: center;
   align-items: center;
 }
-.project-flex-bottom {
+/* .project-flex-bottom {
   display: flex;
 
   justify-content: center;
   align-items: center;
-}
+} */
 .project-tile {
   padding: 20px;
 }
 @media only screen and (max-width: 600px) {
-  .project-flex-top {
+  .project-flex-middle {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -141,7 +141,8 @@ address {
   padding: 10px;
   border: 5px inset #2797ED;
   padding: 2rem;
-  margin: 2rem 30rem;
+margin-left: 35%;
+margin-right: 35%;
   min-width: 10rem;
   background-color: #88FDDF;
 }
