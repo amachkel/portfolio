@@ -1,14 +1,19 @@
-## So glad you're here! 👋
+# So glad you're here! 👋
 
 This is a home page that features my best projects as a web developer. It provides links to these projects, an "About Me" section, and my contact information. 
 <br><br>
-# Skills and Experience
+
+## Skills and Experience
 <br>
 💻HTML/CSS/JS<br>
 🎓Georgia Tech Full Stack Web Developer Bootcamp
 <br><br>
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=amachkel)](https://github.com/anuraghazra/github-readme-stats)
+<br>
 
-<a href="https://codepen.io/amachkel" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="amachkel" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/www.linkedin.com/in/alex-harkins" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="www.linkedin.com/in/alex-harkins" height="30" width="40" /></a>
+
+## Connect with me:
+
+[<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'>](https://github.com/amachkel)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg' alt='linkedin' height='40'>](https://www.linkedin.com/in/alex-harkins/)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg' alt='codepen' height='40'>](https://codepen.io/amachkel)  
+
