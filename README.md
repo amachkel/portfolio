@@ -9,7 +9,7 @@ This is a home page that features my best projects as a web developer. It provid
 🎓Georgia Tech Full Stack Web Developer Bootcamp
 <br><br>
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=amachkel)](https://github.com/anuraghazra/github-readme-stats)
+[![Alex's GitHub stats](https://github-readme-stats.vercel.app/api?username=amachkel)](https://github.com/amachkel/github-readme-stats)
 <br>
 
 
