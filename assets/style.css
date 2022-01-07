@@ -4,8 +4,9 @@ html {
 }
 body {
   background-color: #324376;
-  margin: 0%;
 }
+
+/*Navbar is transparent, links are not*/
 #navbar {
   position: fixed;
   font-size: 26px;
@@ -17,6 +18,7 @@ body {
 }
 .nav-link {
   margin-left: 3rem;
+  /*links don't change appearance when clicked*/
   text-decoration: none;
   border: 5px inset #456990;
   padding: 0.5rem 1rem;
@@ -41,14 +43,6 @@ a {
   padding: 1rem 5rem;
 }
 
-@media only screen and (max-width: 1024px) {
-  h1 {
-    display:flex;
-    flex-wrap:wrap;
-    max-width:10rem;
-  }
-}
-
 .avatar {
   position: absolute;
   right: 5rem;
@@ -70,41 +64,55 @@ h2 {
 .project-image {
   max-width: 100%;
   min-width: 30%;
+  width:100%;
   border-radius: 8px;
   box-shadow: 10px 10px 10px #456990;
+
 }
+
+.hover-box {width:100%; height:500px; margin:0 auto;}
+.hover-box:hover .project-image {width:110%;}
+
+img {
+  overflow: hidden;
+}
+
 .project-tile a {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.project-flex-top, .project-flex-middle, .project-flex-bottom {
+.project-flex-top, .project-flex-bottom  {
   display: flex;
-
+  flex-flow:row wrap;
   justify-content: center;
   align-items: center;
 }
-/* .project-flex-bottom {
-  display: flex;
 
-  justify-content: center;
-  align-items: center;
-} */
-.project-tile {
+.project-flex-top, .project-tile {
   padding: 20px;
+  width:100%;
+  height:auto;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  overflow: hidden;
 }
+
+.project-flex-bottom .project-tile {
+  display:flex;
+  flex-flow:row wrap;
+  max-width: 45%;
+}
+
+/*mobile-friendly.*/
 @media only screen and (max-width: 600px) {
-  .project-flex-middle {
+
+  .project-flex-bottom .project-tile {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-  }
-  .project-flex-bottom {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    max-width:fit-content;
   }
   #contact {
     display: flex;
@@ -112,6 +120,15 @@ h2 {
     align-items: center;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  h1 {
+    display:flex;
+    flex-wrap:wrap;
+    max-width:10rem;
+  }
+}
+
 address {
   font-style: normal;
 }

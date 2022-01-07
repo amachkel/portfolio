@@ -13,7 +13,8 @@ This is a home page that features my best projects as a web developer. It provid
 <br>
 
 ![portfolio](https://user-images.githubusercontent.com/84882398/148471354-51786796-e3f1-460d-bead-66b092e0234d.png)
-
+<br>
+https://amachkel.github.io/portfolio/
 
 ## Connect with me:
 
