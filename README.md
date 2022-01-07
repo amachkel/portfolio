@@ -12,6 +12,8 @@ This is a home page that features my best projects as a web developer. It provid
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=amachkel)](https://github.com/anuraghazra/github-readme-stats)
 <br>
 
+![portfolio](https://user-images.githubusercontent.com/84882398/148471354-51786796-e3f1-460d-bead-66b092e0234d.png)
+
 
 ## Connect with me:
 
