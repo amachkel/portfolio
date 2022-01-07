@@ -4,7 +4,7 @@ This is a home page that features my best projects as a web developer. It provid
 <br><br>
 
 ## Skills and Experience
-<br>
+
 💻HTML/CSS/JS<br>
 🎓Georgia Tech Full Stack Web Developer Bootcamp
 <br><br>
