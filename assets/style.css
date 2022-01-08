@@ -4,9 +4,8 @@ html {
 }
 body {
   background-color: #324376;
+  margin: 0%;
 }
-
-/*Navbar is transparent, links are not*/
 #navbar {
   position: fixed;
   font-size: 26px;
@@ -18,7 +17,6 @@ body {
 }
 .nav-link {
   margin-left: 3rem;
-  /*links don't change appearance when clicked*/
   text-decoration: none;
   border: 5px inset #456990;
   padding: 0.5rem 1rem;
@@ -30,9 +28,32 @@ a:link {
 a:visited {
   color: black;
 }
+
 a {
   text-decoration: none;
 }
+/* .project-image {
+  text-decoration: none;
+  position: relative;
+}
+
+.project-image::before {
+  background: #456990;
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  z-index: -1; 
+}
+
+.project-image:hover::before {
+  transform: scaleX(1);
+} */
+
+.project-image:hover {
+  filter: hue-rotate(180deg);
+}
+
 #welcome-section {
   height: 100vh;
   display: flex;
@@ -43,27 +64,77 @@ a {
   padding: 1rem 5rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  h1 {
+    display:flex;
+    flex-wrap:wrap;
+    max-width:10rem;
+  }
+}
+
 .avatar {
   position: absolute;
   right: 5rem;
-  max-width: 40vw;
-  max-height: 60vh;
+  max-width: 30vw;
   border: 5px inset #06d8fc;
   z-index: -1;
 }
-
 h2 {
   text-align: center;
   font-size: 32px;
-  padding-top: 5rem;
+  padding-top:5rem;
 }
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(3, 33%);
+#projects {
+  background-color: #06d8fc;
+  padding: 20px;
+  background-image: linear-gradient(#06D8FC, #83FDE0);
+  border: 5px inset #06d8fc;
 }
+.project-image {
+  max-width: 100%;
+  min-width: 30%;
+  border-radius: 8px;
+  box-shadow: 10px 10px 10px #456990;
+}
+.project-tile a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-flex-top, .project-flex-middle, .project-flex-bottom {
+  display: flex;
 
+  justify-content: center;
+  align-items: center;
+}
+/* .project-flex-bottom {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+} */
+.project-tile {
+  padding: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .project-flex-middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-flex-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 address {
   font-style: normal;
 }
@@ -91,48 +162,10 @@ address {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  border: 5px inset #2797ed;
+  border: 5px inset #2797ED;
   padding: 2rem;
-  margin-left: 35%;
-  margin-right: 35%;
+margin-left: 35%;
+margin-right: 35%;
   min-width: 10rem;
-  background-color: #88fddf;
+  background-color: #88FDDF;
 }
-
-.project-tile:nth-of-type(1)
-{
-  grid-column:1/3;/*top project will span the width of screen*/
-}
-
-#tile-1 {
-  /*using img as background img made it fill the whole tile. */
-  background: url("horiseon.png");
-  background-size: cover;
-  background-position:top center; /*Focuses on top center of image*/
-  height: 500px;
-}
-#tile-2 {
-  background: url("florence_thumbnail.png");
-  background-size: cover;
-  background-position:top center;
-  height: 500px;
-}
-#tile-3 {
-  background: url("survey_thumbnail.png");
-  background-size: cover;
-  background-position:top center;
-  height: 500px;
-}
-#tile-4 {
-  background: url("landing_page_thumbnail.png");
-  background-size: cover;
-  background-position:top center;
-  height: 500px;
-}
-#tile-5 {
-  background: url("tech_thumbnail.png");
-  background-size: cover;
-  background-position:top center;
-  height: 500px;
-}
-
