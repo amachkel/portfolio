@@ -60,14 +60,9 @@ h2 {
 
 .grid {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 33% 33% 33%;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(3, 33%);
 }
-
-/* img {
-  max-width: 100%;
-  max-height:100%;
-} */
 
 address {
   font-style: normal;
@@ -106,13 +101,14 @@ address {
 
 .project-tile:nth-of-type(1)
 {
-  grid-column:1/3;
+  grid-column:1/3;/*top project will span the width of screen*/
 }
 
 #tile-1 {
+  /*using img as background img made it fill the whole tile. */
   background: url("horiseon.png");
   background-size: cover;
-  background-position:top center;
+  background-position:top center; /*Focuses on top center of image*/
   height: 500px;
 }
 #tile-2 {
