@@ -6,7 +6,7 @@ This is a home page that features my best projects as a web developer. It provid
 ## Skills and Experience
 
 💻HTML/CSS/JS<br>
-🎓Georgia Tech Full Stack Web Developer Bootcamp
+🎓Georgia Tech Full Stack Web Developer Bootcamp (in progress)
 <br><br>
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=amachkel)](https://github.com/anuraghazra/github-readme-stats)

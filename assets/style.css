@@ -55,7 +55,7 @@ a {
 .avatar {
   position: absolute;
   right: 5rem;
-  max-width: 30vw;
+  max-width: 35vw;
   border: 5px inset #06d8fc;
   z-index: -1;
 }
@@ -89,15 +89,14 @@ h2 {
 }
 
 .project-image:hover {
-  filter: hue-rotate(180deg);
+  filter: hue-rotate(180deg);/*changes image color on hover*/
   opacity: 1;
   transition: all 0.5s ease;
-  box-shadow: 15px 15px 15px #456990;
-  transform: scale(1.1);
+  box-shadow: 15px 15px 15px #456990; 
+  transform: scale(1.02); /*looks like image is moving towards you*/
 }
 
 .project-flex-top,
-.project-flex-middle,
 .project-flex-bottom {
   display: flex;
   justify-content: center;
@@ -123,12 +122,7 @@ h2 {
 
 /*mobile friendly*/
 @media only screen and (max-width: 600px) {
-  .project-flex-middle {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
+
   .project-flex-bottom {
     display: flex;
     flex-wrap: wrap;
