@@ -121,7 +121,7 @@ h2 {
     top: 10%;
     text-align: center;
   }
-/*text line below avatar*/
+  /*text line below avatar*/
   #welcome-section p {
     display: inline-block;
     position: absolute;
@@ -139,22 +139,28 @@ h2 {
 
   #navbar .nav-link {
     color: black;
-    padding: 0.25rem 7rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-bottom: 3px solid #06d8fc;
     text-decoration: none;
     font-size: 16px;
     display: block;
-    text-align: end;
+    width: 100%;
+    text-align: center;
+  }
+
+  #navbar.active {
+    display: block;
   }
 
   #navbar {
     background: #83fde0;
-    display: block;
+   
     position: fixed;
-    right: 2rem;
-    left: 2rem;
+    left: 50px;
     top: 0;
-    max-width:fit-content;
+    max-width: 100%;
+    width:100%;
     z-index: 1;
   }
 
@@ -225,11 +231,11 @@ h2 {
   #navbar {
     min-width: 0%;
   }
-  .nav-link {
+  /* .nav-link {
     max-width: fit-content;
     font-size: 1rem;
     text-align: center;
-  }
+  } */
 }
 
 /*h1 text will stay wrapped to avoid covering avatar*/
