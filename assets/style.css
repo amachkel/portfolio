@@ -73,6 +73,8 @@ h2 {
 
 .project-tile {
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .tile-content {
@@ -89,16 +91,17 @@ h2 {
 }
 
 .project-image:hover {
-  filter: hue-rotate(180deg);/*changes image color on hover*/
+  filter: hue-rotate(180deg); /*changes image color on hover*/
   opacity: 1;
   transition: all 0.5s ease;
-  box-shadow: 15px 15px 15px #456990; 
+  box-shadow: 15px 15px 15px #456990;
   transform: scale(1.02); /*looks like image is moving towards you*/
 }
 
 .project-flex-top,
 .project-flex-bottom {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -122,12 +125,10 @@ h2 {
 
 /*mobile friendly*/
 @media only screen and (max-width: 600px) {
-
   .project-flex-bottom {
-    display: flex;
+ 
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    max-width: 100%;
   }
   #contact {
     display: flex;
@@ -135,6 +136,23 @@ h2 {
     align-items: center;
   }
 }
+
+/*responsive for anything above 600px*/
+@media only screen and (min-width: 601px)/*and (max-width: 2023px)*/ {
+  .project-flex-bottom .project-tile {
+    max-width: 42%;
+  }
+}
+
+/* @media only screen and (min-width: 1024) {
+  .project-flex-bottom .project-tile {
+    max-width: 45%;
+  }
+} */
+
+/*141-151: why don't the tiles increase in size? It breaks. Tiles go back to 100% width.*/
+
+/*email address tag*/
 address {
   font-style: normal;
 }
