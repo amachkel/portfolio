@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -11,19 +10,29 @@
   <head>
     <link rel="stylesheet" href="assets/style.css" />
     <!--Media queries won't work without meta tag-->
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Portfolio</title>
   </head>
 
   <body>
+  
     <nav id="navbar">
       <a class="nav-link" href="#welcome-section">About</a>
       <a class="nav-link" href="#projects">My Projects</a>
       <a class="nav-link" href="#contact">Contact Me</a>
     </nav>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i
+    ></a>
+
     <section id="welcome-section">
       <h1>Welcome to Alex's Portfolio</h1>
-      <a>a web developer</a>
+      <p>a web developer</p>
       <img class="avatar" src="assets/avatar.jpg" />
     </section>
     <section id="projects">
