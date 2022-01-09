@@ -145,7 +145,7 @@ h2 {
     text-decoration: none;
     font-size: 16px;
     display: block;
-    width: 100%;
+    width: 100%; /*navbar spans width of screen*/
     text-align: center;
   }
 
@@ -155,12 +155,12 @@ h2 {
 
   #navbar {
     background: #83fde0;
-   
+
     position: fixed;
     left: 50px;
     top: 0;
     max-width: 100%;
-    width:100%;
+    width: 100%;
     z-index: 1;
   }
 
@@ -252,10 +252,12 @@ address {
 }
 
 .contact-img {
-  max-width: 30px;
+  max-width: 50px;
   padding: 10px;
+  border-radius: 20px;
   align-items: center;
 }
+
 #profile-link {
   display: flex;
   align-items: center;
@@ -264,20 +266,20 @@ address {
   display: flex;
   align-items: center;
 }
-#phone {
+#linkedin {
   display: flex;
   align-items: center;
 }
 #links {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding: 10px;
   border: 5px inset #2797ed;
   padding: 2rem;
-  margin-left: 35%;
-  margin-right: 35%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 10px;
   min-width: 10rem;
   background-color: #88fddf;
 }
