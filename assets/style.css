@@ -125,6 +125,9 @@ h2 {
 
 /*mobile friendly*/
 @media only screen and (max-width: 600px) {
+  #welcome-section {
+    font-size: 1rem;
+  }
   .project-flex-bottom {
  
     flex-wrap: wrap;
@@ -138,20 +141,33 @@ h2 {
 }
 
 /*responsive for anything above 600px*/
-@media only screen and (min-width: 601px)/*and (max-width: 2023px)*/ {
+@media only screen and (min-width: 601px) and (max-width: 784px){
   .project-flex-bottom .project-tile {
     max-width: 42%;
   }
-}
-
-/* @media only screen and (min-width: 1024) {
-  .project-flex-bottom .project-tile {
-    max-width: 45%;
+    .tile-content .text {
+    font-size: 2vh;
   }
-} */
 
-/*141-151: why don't the tiles increase in size? It breaks. Tiles go back to 100% width.*/
-
+}
+@media only screen and (min-width: 785px){
+  .project-flex-bottom .project-tile {
+    max-width: 44%;
+  }
+  .tile-content .text {
+    font-size: 2vh;
+  }
+}
+@media only screen and (max-width: 709px) {
+  #navbar {
+    min-width:0%;
+  }
+  .nav-link {
+    max-width: fit-content;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
 /*email address tag*/
 address {
   font-style: normal;
