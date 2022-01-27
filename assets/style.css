@@ -158,16 +158,11 @@ footer {
   }
   /*header stays centered and above avatar*/
   h1 {
-    display: block;
-    position: absolute;
-    top: 10%;
-    text-align: center;
+    
   }
   /*text line below avatar*/
   #welcome-section p {
-    display: inline-block;
-    position: absolute;
-    bottom: 10%;
+    
   }
 
   .avatar {
@@ -280,6 +275,13 @@ footer {
   h1 {
     display: flex;
     flex-wrap: wrap;
-    max-width: 10rem;
+    font-size: 26px;
+  }
+  p {
+    display: flex;
+    flex-wrap: wrap;
+    
+    max-width: 30rem;
+    font-size: 20px;
   }
 }
