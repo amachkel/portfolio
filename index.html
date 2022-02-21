@@ -20,7 +20,8 @@
 
   <body>
     <nav id="navbar">
-      <a class="nav-link" href="#welcome-section">About</a>
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#about">About</a>
       <a class="nav-link" href="#projects">My Projects</a>
       <a class="nav-link" href="#contact">Contact Me</a>
     </nav>
@@ -29,31 +30,39 @@
       <i class="fa fa-bars"></i
     ></a>
 
-    <section id="welcome-section">
+    <section id="home">
       <h1>Welcome to Alex's Portfolio</h1>
-      <p>
-        <!-- A web developer with a history in early childhood education, I enjoy
-        using my communication and teaching skills to work collaboratively with
-        my teammates. In my projects, I utilize JS, CSS, and HTML with libraries
-        and frameworks such as JQuery and Bootstrap. I have a lifetime love of
-        learning and sharing my knowledge with others. I'd love to connect with
-        other programmers. Let's make something awesome together! -->
-      </p>
+
       <img class="avatar" src="assets/avatar.jpg" />
+    </section>
+
+    <section id="about">
+      <p>
+        A web developer with a history in early childhood education, I enjoy
+        using my communication and teaching skills to work collaboratively with
+        my teammates. In my projects, I utilize JavaScript, CSS, and HTML with
+        libraries and frameworks such as JQuery and Bootstrap. I have a lifetime
+        love of learning and sharing my knowledge with others.
+        <br /><br />
+        In my free time, I enjoy playing board games and video games with my
+        husband, son, and daughter. Some of my hobbies include singing, home
+        improvement projects, and macrame.
+        <br /><br />
+        When I start a project, I dedicate myself fully and love a challenge.
+        I'd love to connect with other programmers. Let's make something awesome
+        together!
+      </p>
     </section>
     <section id="projects">
       <h2>Take a look at some of my projects.</h2>
       <div class="project-flex-top">
         <div class="project-tile">
-          <a
-            href="https://amachkel.github.io/GA-hikes/"
-            target="_blank"
-          >
+          <a href="https://amachkel.github.io/GA-hikes/" target="_blank">
             <!--links aren't block elements. Wrapped text in div to position properly over image.-->
             <div class="tile-content">
               <img
                 class="project-image"
-                src="assets/ga-hikes.png"
+                src="assets/thumbnails/ga-hikes.png"
                 alt="Thumbnail of code refactor project"
               />
               <p class="text">Georgia Hikes</p>
@@ -67,7 +76,7 @@
             <div class="tile-content">
               <img
                 class="project-image"
-                src="assets/code-quiz.png"
+                src="assets/thumbnails/code-quiz.png"
                 alt="Thumbnail of code quiz."
               />
               <p class="text">Code Quiz</p>
@@ -75,11 +84,14 @@
           </a>
         </div>
         <div class="project-tile">
-          <a href="https://amachkel.github.io/weather-dashboard/" target="_blank">
+          <a
+            href="https://amachkel.github.io/weather-dashboard/"
+            target="_blank"
+          >
             <div class="tile-content">
               <img
                 class="project-image"
-                src="assets/weatherDashboard.png"
+                src="assets/thumbnails/weatherDashboard.png"
                 alt="Thumbnail of survey page."
               />
               <p class="text">Weather Dashboard</p>
@@ -94,7 +106,7 @@
             <div class="tile-content">
               <img
                 class="project-image"
-                src="assets/landing_page_thumbnail.png"
+                src="./assets/thumbnails/landing_page_thumbnail.png"
                 alt="Thumbnail of product landing page."
               />
               <p class="text">Product Landing Page</p>
@@ -109,7 +121,7 @@
             <div class="tile-content">
               <img
                 class="project-image"
-                src="./assets/password-screenshot.png"
+                src="./assets/thumbnails/password-screenshot.png"
                 alt="password generator thumbnail"
               />
               <p class="text">Password Generator</p>
@@ -122,8 +134,12 @@
       <h2>Let's get in touch</h2>
       <div id="links">
         <a id="profile-link" href="https://github.com/amachkel" target="_blank"
-          ><img class="contact-img" src="assets/github.png"
+          ><img class="contact-img" src="assets/icons/github.png"
         /></a>
+        <a id="linkedin" href="https://www.linkedin.com/in/alex-harkins/">
+          <img class="contact-img" src="./assets/icons/linkedin.png"
+        /></a>
+
         <address>
           <a id="email" href="mailto:amachkel@gmail.com">
             <img
@@ -131,12 +147,15 @@
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3MwFbW05I3AlgRRLRbsqMX4LMgBTP7fr_1Q&usqp=CAU"
           /></a>
         </address>
-        <a id="linkedin" href="https://www.linkedin.com/in/alex-harkins/">
-          <img class="contact-img" src="assets/linkedin.png"
+        <a
+          id="resume"
+          href="./assets/Alex Harkins Web Developer Resume.pdf"
+          target="_blank"
+          ><img class="contact-img" src="assets/icons/resume.png"
         /></a>
       </div>
     </section>
     <footer>©️ Alex Harkins, 2021</footer>
-    <script src="script.js"></script>
+    <script src="./assets/script.js"></script>
   </body>
 </html>

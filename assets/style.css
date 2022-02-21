@@ -22,12 +22,22 @@ a {
   text-decoration: none;
 }
 
-#welcome-section {
+#home {
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  font-size: 32px;
+  padding: 1rem 5rem;
+}
+
+#about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   font-size: 32px;
   padding: 1rem 5rem;
 }
@@ -149,21 +159,13 @@ footer {
 /*mobile friendly*/
 
 @media only screen and (max-width: 600px) {
-  #welcome-section {
+  #home {
     font-size: 1rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-  }
-  /*header stays centered and above avatar*/
-  h1 {
-    
-  }
-  /*text line below avatar*/
-  #welcome-section p {
-    
   }
 
   .avatar {
