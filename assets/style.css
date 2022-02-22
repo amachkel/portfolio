@@ -14,10 +14,31 @@ a:visited {
   color: black;
 }
 
-.fa {
-  font-size: 2rem;
-  padding: 2%;
+#navbar {
+  position: fixed;
+  font-size: 26px;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  min-width: 100rem;
+  padding: 1rem;
+  z-index: 1;
 }
+
+#navbar a:hover {
+  background-color: #06d8fc;
+  color: black;
+}
+
+#navbar .nav-link {
+  margin-left: 3rem;
+  text-decoration: none;
+  border: 5px inset #456990;
+  padding: 0.5rem 1rem;
+  background: aquamarine;
+  max-width: 6rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -25,9 +46,10 @@ a {
 #home {
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
   font-size: 32px;
   padding: 1rem 5rem;
 }
@@ -43,7 +65,7 @@ a {
 }
 
 .avatar {
-  position: absolute;
+  /* position: absolute; */
   right: 5rem;
   max-width: 35vw;
   border: 5px inset #06d8fc;
@@ -54,24 +76,22 @@ h2 {
   font-size: 32px;
   padding-top: 5rem;
 }
-#projects {
+.project-grid {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5rem;
   background-color: #06d8fc;
-  padding: 20px;
+  padding: 5rem;
   background-image: linear-gradient(#06d8fc, #83fde0);
   border: 5px inset #06d8fc;
 }
 
 .project-tile {
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.tile-content {
-  position: relative;
-}
-
-.project-image {
+  filter: hue-rotate(180deg); 
+  height: 30vh;
+  background-size: cover;
+  background-position: top;
   max-width: 100%;
   min-width: 30%;
   border-radius: 8px;
@@ -80,20 +100,34 @@ h2 {
   transition: all 0.5s ease;
 }
 
-.project-image:hover {
-  filter: hue-rotate(180deg); /*changes image color on hover*/
+#ga-hikes {
+  grid-column: 1 / span 2;
+  height: 50vh;
+  background-image: url("../assets/thumbnails/ga-hikes.png");
+}
+
+#code-quiz {
+  background-image: url("../assets/thumbnails/code-quiz.png");
+}
+
+#weather {
+  background-image: url("../assets/thumbnails/weatherDashboard.png");
+}
+
+#landing-page {
+  background-image: url("../assets/thumbnails/landing_page_thumbnail.png");
+}
+
+#password {
+  background-image: url("../assets/thumbnails/password-screenshot.png");
+}
+
+.project-tile:hover {
+  filter: none;/*changes image color on hover*/
   opacity: 1;
   transition: all 0.5s ease;
   box-shadow: 15px 15px 15px #456990;
   transform: scale(1.02); /*looks like image is moving towards you*/
-}
-
-.project-flex-top,
-.project-flex-bottom {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 }
 
 /* positioned inside .tile-content to get text centered */
@@ -159,13 +193,19 @@ footer {
 /*mobile friendly*/
 
 @media only screen and (max-width: 600px) {
-  #home {
+  #home,
+  #about {
     font-size: 1rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  .project-grid {
+    padding: 2rem;
+    grid-gap: 2rem;
   }
 
   .avatar {
@@ -177,37 +217,14 @@ footer {
     min-height: 30%;
   }
 
-  #navbar .nav-link {
-    color: black;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 3px solid #06d8fc;
-    text-decoration: none;
-    font-size: 16px;
-    display: block;
-    width: 100%; /*navbar spans width of screen*/
-    text-align: center;
-  }
-
-  #navbar.active {
-    display: block;
-  }
-
   #navbar {
-    background: #83fde0;
-    display: none;
-    position: fixed;
-    left: 50px;
-    top: 0;
-    max-width: 100%;
-    width: 100%;
-    z-index: 1;
+    flex-direction: column;
+    
   }
 
-  #navbar a:hover {
-    background-color: #06d8fc;
-    color: black;
-  }
+.nav-link {
+  margin-left: none;
+}
 
   #welcome-section {
     font-size: 1rem;
@@ -234,56 +251,50 @@ footer {
     min-width: 100rem;
     padding: 1rem;
     z-index: 1;
-    visibility: visible;
   }
-  /*197-202: hamburger menu disappears and navbar reappears*/
-  .fa {
-    visibility: hidden;
-  }
+
   .nav-link {
-    margin-left: 3rem;
     text-decoration: none;
     border: 5px inset #456990;
     padding: 0.5rem 1rem;
     background: aquamarine;
+    max-width: 6rem;
   }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 784px) {
-  .project-flex-bottom .project-tile {
-    max-width: 42%;
-  }
   .tile-content .text {
     font-size: 2vh;
+  }
+  #navbar {
+    flex-direction: column;
+    margin-left: none;
+  }
+  h1 {
+    max-width: 12rem;
   }
 }
 
-/*adjusts layout slightly as screen expands*/
-@media only screen and (min-width: 785px) {
-  .project-flex-bottom .project-tile {
-    max-width: 44%;
-  }
-  .tile-content .text {
-    font-size: 2vh;
-  }
-}
 @media only screen and (max-width: 709px) {
-  #navbar {
-    min-width: 0%;
+  .project-tile {
+    grid-column: 1 / span 2;
+  }
+  h1 {
+    max-width: 12rem;
   }
 }
 
 /*h1 text will stay wrapped to avoid covering avatar*/
 @media only screen and (max-width: 1240px) {
   h1 {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 26px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    max-width: 35rem;
   }
   p {
     display: flex;
     flex-wrap: wrap;
-    
+
     max-width: 30rem;
     font-size: 20px;
   }
