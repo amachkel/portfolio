@@ -131,12 +131,10 @@ h2 {
   transform: scale(1.02); /*looks like image is moving towards you*/
 }
 
-/* positioned inside .tile-content to get text centered */
-/*unfortunately, text blocks hover effects. still clickable.*/
 .tile-content {
   position: absolute;
   background-color: white;
-  border: 3px inset grey;
+  border: 4px inset #456990;
   bottom: 0;
   left: 0;
   padding: 2rem;
@@ -184,11 +182,12 @@ footer {
   position: relative;
   text-align: center;
 }
-/*mobile friendly*/
+/*---------------mobile friendly-----------------*/
 
 @media only screen and (max-width: 600px) {
   #home,
   #about {
+    padding-top:18rem;
     font-size: 1rem;
     height: 100vh;
     display: flex;
@@ -270,6 +269,8 @@ footer {
   }
   h1 {
     max-width: 12rem;
+    padding-top:16rem;
+    text-align:center;
   }
 }
 
