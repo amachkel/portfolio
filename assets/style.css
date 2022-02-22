@@ -43,6 +43,10 @@ a {
   text-decoration: none;
 }
 
+a.ga-link {
+  grid-column: 1 / span 2;
+}
+
 #home {
   height: 100vh;
   display: flex;
@@ -65,7 +69,6 @@ a {
 }
 
 .avatar {
-  /* position: absolute; */
   right: 5rem;
   max-width: 35vw;
   border: 5px inset #06d8fc;
@@ -102,7 +105,6 @@ h2 {
 }
 
 #ga-hikes {
-  grid-column: 1 / span 2;
   height: 50vh;
   background-image: url("../assets/thumbnails/ga-hikes.png");
 }
