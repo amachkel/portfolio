@@ -26,7 +26,7 @@ a:visited {
 }
 
 #navbar a:hover {
-  background-color: #06d8fc;
+  background-color: #4ef2eb;
   color: black;
 }
 
@@ -92,7 +92,7 @@ h2 {
 
 .project-tile {
   position: relative;
-  filter: hue-rotate(180deg);
+  filter: grayscale(80%);
   height: 30vh;
   background-size: cover;
   background-position: top;
@@ -110,7 +110,7 @@ h2 {
 }
 
 #code-quiz {
-  background-image: url("../assets/thumbnails/code-quiz.png");
+  background-image: url("../assets/thumbnails/Screenshot\ \(39\).png");
 }
 
 #weather {
@@ -121,8 +121,8 @@ h2 {
   background-image: url("../assets/thumbnails/landing_page_thumbnail.png");
 }
 
-#password {
-  background-image: url("../assets/thumbnails/password-screenshot.png");
+#rps {
+  background-image: url("../assets/thumbnails/Screenshot\ \(42\).png");
 }
 
 .project-tile:hover {
