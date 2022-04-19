@@ -2,7 +2,9 @@
 <html lang="en-US">
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/3c06b4aef0.js" crossorigin="anonymous"></script>
 
 <head>
@@ -14,14 +16,41 @@
 </head>
 
 <body class="dark-mode">
-  <nav id="navbar">
+  <header class="header">
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" onclick="darkMode()"><span><i id="icon" style="color: black"
+                class="fas fa-toggle-off"></i></span></a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  <!-- <nav id="navbar">
     <a class="nav-link" href="#home">Home</a>
     <a class="nav-link" href="#about">About</a>
     <a class="nav-link" href="#projects">Projects</a>
     <a class="nav-link" href="#contact">Contact</a>
     <a class="nav-link" onclick="darkMode()"><span><i id="icon" style="color: black"
           class="fas fa-toggle-off"></i></span></a>
-  </nav>
+  </nav> -->
   <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
 
   <section id="home">
