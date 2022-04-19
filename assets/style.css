@@ -43,7 +43,7 @@ a {
   text-decoration: none;
 }
 
-a.ga-link {
+a.bookclub-link {
   grid-column: 1 / span 2;
 }
 
@@ -104,8 +104,12 @@ h2 {
   transition: all 0.5s ease;
 }
 
-#ga-hikes {
+#book-club {
   height: 50vh;
+  background-image: url("../assets/thumbnails/hardback-life.png");
+}
+
+#ga-hikes {
   background-image: url("../assets/thumbnails/ga-hikes.png");
 }
 
@@ -117,16 +121,12 @@ h2 {
   background-image: url("../assets/thumbnails/weatherDashboard.png");
 }
 
-#landing-page {
-  background-image: url("../assets/thumbnails/landing_page_thumbnail.png");
-}
-
-#rps {
-  background-image: url("../assets/thumbnails/Screenshot\ \(42\).png");
+#tech-blog {
+  background-image: url("../assets/thumbnails/tech-blog.png");
 }
 
 .project-tile:hover {
-  filter: none;/*changes image color on hover*/
+  filter: none; /*changes image color on hover*/
   opacity: 1;
   transition: all 0.5s ease;
   box-shadow: 15px 15px 15px #456990;
@@ -189,7 +189,7 @@ footer {
 @media only screen and (max-width: 600px) {
   #home,
   #about {
-    padding-top:18rem;
+    padding-top: 18rem;
     font-size: 1rem;
     height: 100vh;
     display: flex;
@@ -217,9 +217,9 @@ footer {
     margin-left: 0;
   }
 
-#navbar .nav-link {
-  margin-left: 0;
-}
+  #navbar .nav-link {
+    margin-left: 0;
+  }
 
   #welcome-section {
     font-size: 1rem;
@@ -249,7 +249,6 @@ footer {
   }
 
   .nav-link {
-    
     text-decoration: none;
     border: 5px inset #456990;
     padding: 0.5rem 1rem;
@@ -271,8 +270,8 @@ footer {
   }
   h1 {
     max-width: 12rem;
-    padding-top:16rem;
-    text-align:center;
+    padding-top: 16rem;
+    text-align: center;
   }
 }
 
