@@ -1,6 +1,6 @@
 # So glad you're here! 👋
 
-This is a home page that features my best projects as a web developer. It provides links to these projects, an "About Me" section, and my contact information. 
+With a background in early childhood development/education, I bring creativity, empathy, and leadership qualities to the table. I discovered a passion for developing fully responsive and interactive apps, and my participation in the Georgia Tech Full Stack Coding Bootcamp has awakened my love for learning and developing with new technologies. I am an extremely hard worker with a sunny disposition, and I love to make new connections. Don't hesitate to contact me, let's make something awesome together! 
 <br><br>
 
 ## Skills and Experience
@@ -26,8 +26,10 @@ Back End
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=amachkel)](https://github.com/anuraghazra/github-readme-stats)
 <br>
 
-![portfolio](https://user-images.githubusercontent.com/84882398/148471354-51786796-e3f1-460d-bead-66b092e0234d.png)
+![portfolio](https://user-images.githubusercontent.com/84882398/164118116-832ec4b5-ec06-40b4-bce8-4a7b900a78f5.png)
+
 <br>
+
 ### [Visit my portfolio here!](https://amachkel.github.io/portfolio/)
 
 ## A Thanks to My Resources
