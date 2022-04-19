@@ -3,6 +3,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet" />
+<script src="https://kit.fontawesome.com/3c06b4aef0.js" crossorigin="anonymous"></script>
 
 <head>
   <link rel="stylesheet" href="assets/style.css" />
@@ -12,12 +13,13 @@
   <title>Portfolio</title>
 </head>
 
-<body>
+<body class="dark-mode">
   <nav id="navbar">
     <a class="nav-link" href="#home">Home</a>
     <a class="nav-link" href="#about">About</a>
     <a class="nav-link" href="#projects">Projects</a>
     <a class="nav-link" href="#contact">Contact</a>
+    <a class="nav-link" onclick="darkMode()"><span><i id="icon" class="fas fa-toggle-off"></i></span></a>
   </nav>
   <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
 

@@ -6,6 +6,10 @@ body {
   background-color: #324376;
   margin: 0%;
 }
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 
 a:link {
   color: black;
