@@ -43,8 +43,21 @@ a {
   text-decoration: none;
 }
 
-a.bookclub-link {
+.grid-top {
   grid-column: 1 / span 2;
+}
+
+.repo {
+  padding: 2rem;
+  display: inline-table;
+}
+
+.repo:hover {
+  color: #324376;
+  transition: all 0.5s ease;
+  box-shadow: 15px 15px 15px #456990;
+  transform: scale(1.02);
+  border-radius: 8px;
 }
 
 #home {
