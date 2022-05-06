@@ -238,6 +238,14 @@ h2 {
   background-image: url("../assets/thumbnails/tech-blog.png");
 }
 
+#team-profile {
+  background-image: url("../assets/thumbnails/team-profile-generator.png");
+}
+
+#candy-crush {
+  background-image: url("../assets/thumbnails/candy-crush.png");
+}
+
 .project-tile:hover {
   filter: none; /*changes image color on hover*/
   opacity: 1;
